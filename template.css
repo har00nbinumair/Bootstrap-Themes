@@ -1,0 +1,118 @@
+.background-img {
+    background-image: url(bg-masthead.jpg);
+    background-repeat: none;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height: 100%;
+    opacity: 85%;
+    position: relative;
+    top: 0px;
+}
+
+.scrolled{
+    background-color: #fff;
+}
+.scrolled .navbar-brand,
+.scrolled .nav-item .nav-link{
+    color: #111;
+}
+
+.background-img::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(43, 28, 1, 0.55);
+}
+.active {
+    color: #f4623a !important;
+}
+
+main {
+    position: absolute;
+    top: 100vh;
+}
+
+.fa-gem,
+.fa-globe,
+.fa-heart,
+.fa-laptop,
+.fa-mobile-screen-button {
+    font-size: 40px;
+    color: #f4623a;
+}
+
+form input,
+textarea {
+    width: 100%;
+    padding: 12px 0px;
+}
+
+.overlay-img-1,
+.overlay-img-2,
+.overlay-img-3,
+.overlay-img-4,
+.overlay-img-5,
+.overlay-img-6 {
+
+    position: relative;
+
+}
+
+.overlay-1,
+.overlay-2,
+.overlay-3,
+.overlay-4,
+.overlay-5,
+.overlay-6 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 22% 0%;
+    background-color: #f4623a;
+    color: #f8f9fa;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay-img-1:hover .overlay-1,
+.overlay-img-2:hover .overlay-2,
+.overlay-img-3:hover .overlay-3,
+.overlay-img-4:hover .overlay-4,
+.overlay-img-5:hover .overlay-5,
+.overlay-img-6:hover .overlay-6 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:995px) {
+    div.bg-change {
+        display: block;
+        background: #f8f9fa !important;
+        position: fixed !important;
+        top: 0px;
+    }
+
+    .navbar-brand,
+    .navbar-nav li a.nav-link {
+        color: #212529 !important;
+    }
+
+    .navbar-toggler {
+        background: #212529 !important;
+    }
+
+    .background-img {
+        height: 90vh;
+        background-position: bottom;
+    }
+
+    main {
+        top: 90vh;
+    }
+}
